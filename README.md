@@ -1,6 +1,6 @@
 # Quasar App (gym-app)
 
-An app for Gym training
+This in an application to be develop using quasar framework (based on vuejs3) to learn more about front-end frameworks.
 
 ## Install the dependencies
 ```bash
