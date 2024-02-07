@@ -17,7 +17,6 @@
         expand-separator
         icon="mail"
         label="Inbox"
-        caption="5 unread emails"
         default-opened>
         <q-item class="bg-primary text-white" clickable v-ripple>
             <q-item-section avatar><q-icon name="mdi-dumbbell"/></q-item-section>
@@ -30,8 +29,8 @@
         </q-expansion-item>
         
         <q-fab color="secondary" push icon="keyboard_arrow_right" direction="right">
-        <q-fab-action color="primary" @click="onClick" icon="mail" />
-        <q-fab-action color="accent" @click="onClick" icon="alarm" />
+        <q-fab-action color="primary" @click="onClick" icon="L" />
+        <q-fab-action color="accent" @click="onClick" icon="L" />
       </q-fab>
       </q-list>
       </q-drawer>
