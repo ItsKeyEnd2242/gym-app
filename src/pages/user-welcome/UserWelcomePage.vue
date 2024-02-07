@@ -12,26 +12,49 @@
 
       <q-drawer v-model="drawer" show-if-above :width="250" :breakpoint="0" :height="250" bordered>
         <q-list>
-
+          <!-- q-expansion treinos -->
         <q-expansion-item
         expand-separator
-        icon="mail"
-        label="Inbox"
+        icon="mdi-human"
+        label="Seu treino"
         default-opened>
         <q-item class="bg-primary text-white" clickable v-ripple>
             <q-item-section avatar><q-icon name="mdi-dumbbell"/></q-item-section>
-            <q-item-section>Treinos</q-item-section>
+            <q-item-section>Exercicios e divisões</q-item-section>
           </q-item>
           <q-item class="bg-accent text-white" clickable v-ripple>
-            <q-item-section avatar><q-icon name="mdi-dumbbell"/></q-item-section>
-            <q-item-section>Treinos</q-item-section>
+            <q-item-section avatar><q-icon name="mdi-food-apple"/></q-item-section>
+            <q-item-section>Dieta</q-item-section>
+          </q-item>
+        </q-expansion-item>
+        <!-- q-expansion de configurações -->
+        <q-expansion-item
+        expand-separator
+        icon="mdi-cog-outline"
+        label="Configuração"
+        default-opened>
+        <!-- q-expansion opções dentro de configurações -->
+        <q-expansion-item
+        expand-separator
+        icon=""
+        label="Opções"
+        default-opened>
+        <q-item class="bg-Option text-white" clickable v-ripple>
+            <q-item-section avatar><q-icon name="mdi-phone-outline"/></q-item-section>
+            <q-item-section>Suporte</q-item-section>
+          </q-item>
+          <q-item class="bg-accent text-white" clickable v-ripple>
+            <q-item-section avatar><q-icon name="mdi-account-cog"/></q-item-section>
+            <q-item-section>Conta</q-item-section>
+          </q-item>
+        </q-expansion-item>
+          <q-item class="bg-accent text-white" clickable v-ripple>
+            <q-item-section avatar><q-icon name="mdi-logout"/></q-item-section>
+            <q-item-section>Sair da conta</q-item-section>
           </q-item>
         </q-expansion-item>
         
-        <q-fab color="secondary" push icon="keyboard_arrow_right" direction="right">
-        <q-fab-action color="primary" @click="onClick" icon="L" />
-        <q-fab-action color="accent" @click="onClick" icon="L" />
-      </q-fab>
+      
       </q-list>
       </q-drawer>
     </q-layout>
@@ -46,7 +69,7 @@
 <script lang="ts">
 import { ref } from 'vue';
 
-export default {
+export default { 
   components: {
     //BOTÕES/COMPONENTES CUSTOMIZADOS  
   },
