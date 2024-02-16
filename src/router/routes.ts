@@ -13,8 +13,8 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/exercises',
         component: () => import('pages/exercices/TrainingPlan.vue'),
-      }
-    ]
+      }      
+    ],
   },
 
   // Always leave this as last one,
