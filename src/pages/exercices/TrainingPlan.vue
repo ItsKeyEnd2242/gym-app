@@ -101,7 +101,7 @@ import DialogNewTrainVue from './DialogNewTrain.vue';
         else {
           console.log('cliente ok')
         }
-      }
+      } 
       /**
        * 
        funcao onOk(novoTreino = 'parametro') {
