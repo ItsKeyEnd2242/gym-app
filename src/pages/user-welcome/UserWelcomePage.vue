@@ -6,7 +6,6 @@
         <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
         <q-toolbar-title>Menu</q-toolbar-title>
       </q-toolbar>
- 
     </q-header>
 
     <q-drawer v-model="drawer" show-if-above :width="250" :breakpoint="0" :height="250" bordered>

@@ -1,5 +1,6 @@
 <template>
-
+    <input label="login">
+    </input>
 </template>
 
 <style lang="scss" scoped>
